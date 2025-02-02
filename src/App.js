@@ -5,16 +5,10 @@ import './index.css';
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import NotificationPage from "./pages/Notification";
-import useHomeStore from "./stores/HomeStore";
 
 const { Content } = Layout;
 
 function App() {
-  const {
-    count: homeCount,
-    increment: homeIncrement,
-    decrement: homeDecrement,
-  } = useHomeStore();
 
   return (
     <Router>

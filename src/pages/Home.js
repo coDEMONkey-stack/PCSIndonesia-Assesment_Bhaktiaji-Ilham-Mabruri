@@ -58,7 +58,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Activity Section */}
       <div className="mt-6">
         <h3 className="text-lg font-bold">Today's Activity</h3>
         <div className="flex justify-around mt-2">
@@ -76,26 +75,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* PCS News */}
       <div className="mt-6">
-        <h3 className="text-lg font-bold">PCS News</h3>
-        <div className="bg-white shadow-md rounded-lg p-4 mt-2">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-red-500 rounded-full"></div>
-            <div>
-              <h4 className="font-bold">Ana Riswati</h4>
-              <p className="text-xs text-gray-500">Senin, 30 Mei 2022</p>
-            </div>
-          </div>
-          {Array.from({ length: 4 }).map((_, i) => (
-            <p key={i} className="text-gray-600 mt-2 text-sm">Kalimat {i + 1} - Lorem ipsum dolor sit amet...</p>
-          ))}
-        </div>
         <PCSNewsCarousel/>
-
       </div>
 
-      {/* Online Section */}
       <div className="mt-6">
         <h3 className="text-lg font-bold">Online</h3>
         {isOffline ? (
