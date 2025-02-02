@@ -8,7 +8,7 @@ const Footer = () => {
   const isActive = (path) => (location.pathname === path ? "text-red-500" : "text-gray-400");
 
   return (
-    <div className="font-base fixed bottom-0 z-[2] m-0 flex w-full max-w-[480px] list-none bg-white border-t border-gray-300 p-2.5 text-center align-middle font-semibold leading-[13px] no-underline before:absolute before:top-0 before:left-0 before:w-full before:h-[6px] before:bg-gradient-to-t before:from-gray-300 before:to-transparent before:content-['']">
+    <div className="font-base fixed bottom-0 z-[2] m-0 flex w-full list-none bg-white border-t border-gray-300 sm:p-2.5 px-1 py-2 text-center align-middle font-semibold leading-[13px] no-underline before:absolute before:top-0 before:left-0 before:w-full before:h-[6px] before:bg-gradient-to-t before:from-gray-300 before:to-transparent before:content-['']">
       <div className="inline-block w-1/5 text-[10px]">
         <Link to="/">
           <div className="relative mb-1 pt-1">
@@ -53,6 +53,11 @@ const Footer = () => {
           <span className={`text-sm inline-block whitespace-nowrap ${isActive("/settings")}`}>Settings</span>
         </Link>
       </div>
+      <style jsx global>{`
+        .w-full {
+          max-width: 460px!important;
+        }
+      `}</style>
     </div>
   );
 };
