@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Layout } from "antd";
 import './index.css';
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import useHomeStore from "./stores/HomeStore";
 
@@ -17,8 +17,8 @@ function App() {
 
   return (
     <Router>
-      <div className="my-0 mx-auto min-h-full max-w-screen-sm">
-        <Content className="container my-0 mx-auto min-h-screen max-w-[480px] overflow-x-hidden bg-white pb-[66px]">
+      <div className="my-0 mx-auto min-h-full">
+        <Content className="my-0 mx-auto min-h-screen max-w-[480px] overflow-x-hidden bg-white pb-[66px]">
           <Routes>
             <Route
               path="/"
